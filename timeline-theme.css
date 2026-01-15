@@ -61,3 +61,36 @@
   stroke: transparent !important;
 }
 
+/* ================================
+   HIDE BOTTOM TIME AXIS TICK MARKS
+   (the little vertical comb lines)
+   ================================ */
+
+/* D3-style axis ticks */
+.tl-timeaxis g.tick,
+.tl-timeaxis .tick {
+  opacity: 0 !important;
+}
+
+/* Tick lines (sometimes direct <line> elements) */
+.tl-timeaxis g.tick line,
+.tl-timeaxis .tick line,
+.tl-timeaxis line {
+  opacity: 0 !important;
+  stroke: transparent !important;
+}
+
+/* Axis baseline / domain line (often a <path class="domain">) */
+.tl-timeaxis path.domain,
+.tl-timeaxis .domain,
+.tl-timeaxis path {
+  opacity: 0 !important;
+  stroke: transparent !important;
+}
+
+/* Safety: if any ticks are coming from background styling */
+.tl-timeaxis,
+.tl-timeaxis * {
+  background-image: none !important;
+}
+
