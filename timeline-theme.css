@@ -16,3 +16,11 @@
 .tl-timenav .tl-timemarker:hover .tl-timemarker-text {
   color: #d81f1f !important;
 }
+
+/* The time axis labels (years/months) along the bottom nav */
+.tl-timeaxis .tl-timeaxis-tick-text,
+.tl-timeaxis .tl-timeaxis-tick-text span {
+  color: red !important;
+  fill: red !important;   /* for SVG text in some builds */
+}
+
