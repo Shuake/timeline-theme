@@ -1,0 +1,18 @@
+/* ================================
+   TIMELINE DATE COLOR OVERRIDES
+   ================================ */
+
+/* Date above each slide (Year / Month) */
+.tl-headline-date {
+  color: #d81f1f !important;   /* change color here */
+}
+
+/* Bottom timeline navigation dates */
+.tl-timenav .tl-timemarker-text {
+  color: #d81f1f !important;   /* change color here */
+}
+
+/* Optional: hover state for bottom timeline */
+.tl-timenav .tl-timemarker:hover .tl-timemarker-text {
+  color: #d81f1f !important;
+}
