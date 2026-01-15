@@ -15,4 +15,20 @@
   opacity: 0 !important;
 }
 
+/* ================================
+   HIDE TIME AXIS TICK MARKS
+   ================================ */
+
+/* Major + minor tick lines (SVG) */
+.tl-timeaxis .tl-timeaxis-tick line,
+.tl-timeaxis .tl-timeaxis-tick path {
+  opacity: 0 !important;
+  stroke: transparent !important;
+}
+
+/* Fallback for other builds */
+.tl-timeaxis line {
+  opacity: 0 !important;
+}
+
 
