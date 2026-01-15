@@ -31,4 +31,33 @@
   opacity: 0 !important;
 }
 
+/* ================================
+   HIDE TIME AXIS TICK MARKS (more aggressive)
+   ================================ */
+
+/* Most common: ticks are SVG lines/paths inside the time axis */
+.tl-timeaxis line,
+.tl-timeaxis path,
+.tl-timeaxis polyline,
+.tl-timeaxis rect {
+  opacity: 0 !important;
+  stroke: transparent !important;
+  fill: transparent !important;
+}
+
+/* If ticks are grouped/labeled as "tick" elements */
+.tl-timeaxis .tick line,
+.tl-timeaxis .tick path,
+.tl-timeaxis .tl-timeaxis-tick line,
+.tl-timeaxis .tl-timeaxis-tick path {
+  opacity: 0 !important;
+  stroke: transparent !important;
+}
+
+/* Extra: sometimes there are grid/tick lines in the nav area too */
+.tl-timenav line,
+.tl-timenav path {
+  opacity: 0 !important;
+  stroke: transparent !important;
+}
 
